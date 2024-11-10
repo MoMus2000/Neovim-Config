@@ -19,6 +19,4 @@ vim.api.nvim_set_keymap('n', '<leader>tb', ':Telescope buffers<CR>',
 { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<leader>th', ':Telescope help_tags<CR>', 
 { noremap = true, silent = true })
-vim.api.nvim_set_keymap('n', '<leader>q', ':Telescope close<CR>', 
-{ noremap = true, silent = true })
 

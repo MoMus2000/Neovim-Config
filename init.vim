@@ -13,13 +13,29 @@ Plug 'numToStr/Comment.nvim'
 " Add NerdTree plugin for file explorer
 Plug 'preservim/nerdtree'
 
+" Add File and Word searching with telescope
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
+
+" Add LSP
+Plug 'neovim/nvim-lspconfig'
+
+" Install nvim-cmp for autocompletion
+Plug 'hrsh7th/nvim-cmp'
+
+" Install the LSP source for nvim-cmp
+Plug 'hrsh7th/cmp-nvim-lsp'
+
+" Optional: Install lspsaga for better LSP UI (documentation, signature help, etc.)
+Plug 'glepnir/lspsaga.nvim'
+
 " End plugin management
 call plug#end()
 
 " Telecope mappings inside the telescope_config.luab file
 lua require('telescope_config')
+lua require('lsp_config')
+lua require('cmp_config')
 
 " Enable syntax highlighting
 syntax enable
