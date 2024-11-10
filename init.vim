@@ -53,7 +53,7 @@ colorscheme gruvbox
 set number
 
 " Enable relative line numbers
-nmap <Leader>l :set relativenumber!<CR>
+nmap <Leader>ll :set relativenumber!<CR>
 
 " Set tab width
 set tabstop=2
@@ -61,7 +61,7 @@ set shiftwidth=2
 set expandtab
 
 " Set border
-set colorcolumn=90
+set colorcolumn=95
 set textwidth=90
 
 " Enable mouse support
@@ -79,10 +79,10 @@ xnoremap <A-j> :m '>+1<CR>gv=gv
 xnoremap <S-K> :m '<-2<CR>gv=gv
 xnoremap <S-J> :m '>+1<CR>gv=gv
 
-nnoremap <Leader>f :NERDTreeToggle<CR>
+nnoremap <Leader>f silent! :NERDTreeToggle<CR>
 
 " Set command window at the bottom
-:set cmdheight=0
+:set cmdheight=1
 :set linespace=0
 
 " Vertical split with Leader + v

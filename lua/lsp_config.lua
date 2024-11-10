@@ -18,6 +18,12 @@ lspconfig.rust_analyzer.setup{
     vim.lsp.protocol.make_client_capabilities())
 }
 
+-- OCaml
+lspconfig.ocamllsp.setup{
+    capabilities = require('cmp_nvim_lsp').default_capabilities(
+    vim.lsp.protocol.make_client_capabilities())
+}
+
 -- Key mappings for LSP features
 local opts = { noremap=true, silent=true }
 
