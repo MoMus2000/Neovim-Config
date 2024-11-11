@@ -29,6 +29,9 @@ Plug 'hrsh7th/cmp-nvim-lsp'
 " Optional: Install lspsaga for better LSP UI (documentation, signature help, etc.)
 Plug 'glepnir/lspsaga.nvim'
 
+" Multiple cursors
+Plug 'terryma/vim-multiple-cursors'
+
 " End plugin management
 call plug#end()
 
@@ -82,7 +85,7 @@ xnoremap <S-J> :m '>+1<CR>gv=gv
 nnoremap <Leader>f silent! :NERDTreeToggle<CR>
 
 " Set command window at the bottom
-:set cmdheight=1
+:set cmdheight=0
 :set linespace=0
 
 " Vertical split with Leader + v

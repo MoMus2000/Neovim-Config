@@ -42,3 +42,14 @@ vim.api.nvim_set_keymap('n', 'gi', '<cmd>lua vim.lsp.buf.implementation()<CR>', 
 -- Show references
 vim.api.nvim_set_keymap('n', 'gr', '<cmd>lua vim.lsp.buf.references()<CR>', opts)
 
+vim.diagnostic.config({
+  virtual_text = false,  -- Disable virtual text
+  signs = true,          -- Keep signs in the gutter
+  underline = true,      -- Underline problematic code
+  update_in_insert = false, -- Update diagnostics only in normal mode
+  severity_sort = true,  -- Sort diagnostics by severity
+})
+
+vim.keymap.set("n", "gh", vim.diagnostic.open_float, 
+  { noremap = true, silent = true })
+
