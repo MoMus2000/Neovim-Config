@@ -1,0 +1,67 @@
+// documentation: https://zed.dev/docs/key-bindings
+// To see the default key bindings run `zed: open default keymap`
+[
+  {
+    // Vim: File Tree ("ProjectPanel") actions
+    "context": "ProjectPanel && not_editing",
+    "bindings": {
+      "h": "project_panel::CollapseSelectedEntry",
+      "l": "project_panel::ExpandSelectedEntry",
+      "j": "menu::SelectNext",
+      "k": "menu::SelectPrev",
+      "o": "menu::Confirm",
+      "r": "project_panel::Rename",
+      "z c": "project_panel::CollapseSelectedEntry",
+      "z o": "project_panel::ExpandSelectedEntry",
+      "x": "project_panel::Cut",
+      "c": "project_panel::Copy",
+      "p": "project_panel::Paste",
+      "d": "project_panel::Delete",
+      "a": "project_panel::NewFile",
+      "shift-a": "project_panel::NewDirectory",
+      "shift-y": "project_panel::CopyRelativePath",
+      "g y": "project_panel::CopyPath"
+    }
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "cmd-1": "workspace::NewTerminal",
+      "cmd-2": "workspace::ToggleBottomDock"
+    }
+  },
+  {
+    "context": "Terminal",
+    "bindings": {}
+  },
+  {
+    "context": "Editor",
+    "bindings": {}
+  },
+  {
+    "context": "Editor && vim_mode == visual",
+    "bindings": {
+      "K": "editor::MoveLineUp",
+      "J": "editor::MoveLineDown",
+      "L": "editor::Tab",
+      "H": "editor::TabPrev"
+    }
+  },
+  {
+    "context": "Editor && vim_mode == normal",
+    "bindings": {
+      "space space": "file_finder::Toggle",
+      "space t t": "file_finder::Toggle",
+      "space t g": "pane::DeploySearch",
+      "space s": "pane::SplitDown",
+      "space v": "pane::SplitRight",
+      "space j": ["workspace::ActivatePaneInDirection", "Down"],
+      "space k": ["workspace::ActivatePaneInDirection", "Up"],
+      "space l": ["workspace::ActivatePaneInDirection", "Right"],
+      "space h": ["workspace::ActivatePaneInDirection", "Left"],
+      "space d": "pane::CloseActiveItem",
+      "space b": "pane::GoBack",
+      "space n": "pane::GoForward"
+    }
+  }
+]
