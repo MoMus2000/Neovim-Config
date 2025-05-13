@@ -23,3 +23,12 @@ Open Neovim and run `vim-plug`
 :PlugInstall
 ```
 
+## Step 4
+
+Modify the `leader`, `mappings` to your liking.
+
+## Step 5
+
+Make sure the LSPs are set up ( I use pyright, gopls, rust-analyzer etc .. )
+
+
