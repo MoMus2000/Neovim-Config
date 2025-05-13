@@ -25,7 +25,7 @@ Open Neovim and run `vim-plug`
 
 ## Step 4
 
-Modify the `leader`, `mappings` to your liking.
+Modify the `leader`, `mappings` to your liking inside `init.vim`.
 
 ## Step 5
 
